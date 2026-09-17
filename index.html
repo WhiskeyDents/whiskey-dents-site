@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Whiskey Dents — loud, rough-edged, home-rolled rock 'n' roll from North Texas.">
+  <title>The Whiskey Dents</title>
+
+  <style>
+    :root {
+      --black: #090909;
+      --white: #f1efe9;
+      --soft-white: #cbc8c1;
+      --page-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--black);
+      color: var(--white);
+    }
+
+    body {
+      font-family: "Courier New", Courier, monospace;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    main {
+      width: min(100%, var(--page-width));
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin: 0;
+    }
+
+    .hero img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .about {
+      padding: clamp(2.25rem, 6vw, 5rem) clamp(1.25rem, 6vw, 4.5rem) clamp(3.5rem, 8vw, 6rem);
+    }
+
+    h1 {
+      margin: 0 0 clamp(2rem, 4vw, 3rem);
+      color: var(--white);
+      font-family: "American Typewriter", "Courier New", Courier, monospace;
+      font-size: clamp(2.25rem, 7.4vw, 5.6rem);
+      font-weight: 700;
+      letter-spacing: 0.075em;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .bio {
+      width: min(100%, 850px);
+      margin: 0 auto;
+      color: var(--soft-white);
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      line-height: 1.75;
+    }
+
+    .bio p {
+      margin: 0;
+    }
+
+    .bio p + p {
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .about {
+        padding-top: 2rem;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 11vw, 3.1rem);
+        letter-spacing: 0.04em;
+      }
+
+      .bio {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <figure class="hero">
+      <img
+        src="whiskey-dents-stairwell.png"
+        alt="The Whiskey Dents in the stairwell at their rehearsal space">
+    </figure>
+
+    <section class="about" aria-labelledby="band-name">
+      <h1 id="band-name">The Whiskey Dents</h1>
+
+      <div class="bio">
+        <p>
+          The Whiskey Dents are a Dallas-area three-piece making loud, rough-edged,
+          home-rolled rock ’n’ roll with plenty of indie flavor. A North Texas-rooted
+          musical gumbo: garage heat, punk attitude, blues underneath it all, with a
+          little surf rock and alt-country spice.
+        </p>
+
+        <p>
+          The Dents came together the way a lot of good bands do: years of friendship,
+          shared history, and eventually finding a sound together. The songs are built
+          the old-fashioned way: three people in a room, turning it up and hitting it
+          till it feels right.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
