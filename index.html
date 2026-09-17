@@ -4,19 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The Whiskey Dents — loud, rough-edged, home-rolled rock 'n' roll from North Texas.">
+  <meta name="theme-color" content="#090909">
   <title>The Whiskey Dents</title>
-
   <style>
     :root {
       --black: #090909;
       --white: #f1efe9;
       --soft-white: #cbc8c1;
+      --faint: #8f8b84;
       --page-width: 1100px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
@@ -36,9 +35,7 @@
       margin: 0 auto;
     }
 
-    .hero {
-      margin: 0;
-    }
+    .hero { margin: 0; }
 
     .hero img {
       display: block;
@@ -47,7 +44,7 @@
     }
 
     .about {
-      padding: clamp(2.25rem, 6vw, 5rem) clamp(1.25rem, 6vw, 4.5rem) clamp(3.5rem, 8vw, 6rem);
+      padding: clamp(2.25rem, 6vw, 5rem) clamp(1.25rem, 6vw, 4.5rem) 1.75rem;
     }
 
     h1 {
@@ -70,18 +67,51 @@
       line-height: 1.75;
     }
 
-    .bio p {
-      margin: 0;
+    .bio p { margin: 0; }
+    .bio p + p { margin-top: 1.5rem; }
+
+    .single {
+      width: min(100%, 850px);
+      margin: clamp(2.75rem, 7vw, 4.75rem) auto 0;
+      padding-top: clamp(1.8rem, 4vw, 2.4rem);
+      border-top: 1px solid rgba(241, 239, 233, 0.18);
+      text-align: center;
     }
 
-    .bio p + p {
-      margin-top: 1.5rem;
+    .single-kicker {
+      margin: 0 0 0.45rem;
+      color: var(--faint);
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .single-title {
+      margin: 0;
+      color: var(--white);
+      font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .closing-stamp {
+      padding: clamp(2.75rem, 7vw, 4.5rem) 1.25rem clamp(3rem, 8vw, 5.5rem);
+      text-align: center;
+    }
+
+    .closing-stamp img {
+      display: block;
+      width: clamp(180px, 27vw, 290px);
+      max-width: 70vw;
+      height: auto;
+      margin: 0 auto;
+      filter: invert(1) contrast(1.08);
+      opacity: 0.93;
     }
 
     @media (max-width: 600px) {
-      .about {
-        padding-top: 2rem;
-      }
+      .about { padding-top: 2rem; }
 
       h1 {
         font-size: clamp(2rem, 11vw, 3.1rem);
@@ -92,6 +122,9 @@
         font-size: 1rem;
         line-height: 1.7;
       }
+
+      .single { margin-top: 2.7rem; }
+      .closing-stamp img { width: 200px; }
     }
   </style>
 </head>
@@ -99,9 +132,8 @@
 <body>
   <main>
     <figure class="hero">
-      <img
-        src="whiskey-dents-stairwell.png"
-        alt="The Whiskey Dents in the stairwell at their rehearsal space">
+      <img src="whiskey-dents-stairwell.png"
+           alt="The Whiskey Dents in the stairwell at their rehearsal space">
     </figure>
 
     <section class="about" aria-labelledby="band-name">
@@ -122,7 +154,17 @@
           till it feels right.
         </p>
       </div>
+
+      <div class="single" aria-label="Upcoming release">
+        <p class="single-kicker">New Single</p>
+        <p class="single-title">“Come On Baby” — Coming Soon</p>
+      </div>
     </section>
+
+    <div class="closing-stamp" aria-label="The Whiskey Dents logo">
+      <img src="whiskey-dents-logo.jpg"
+           alt="The Whiskey Dents truck logo">
+    </div>
   </main>
 </body>
 </html>
