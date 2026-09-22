@@ -6,6 +6,7 @@
   <meta name="description" content="The Whiskey Dents — loud, rough-edged, home-rolled rock 'n' roll from North Texas.">
   <meta name="theme-color" content="#090909">
   <title>The Whiskey Dents</title>
+
   <style>
     :root {
       --black: #090909;
@@ -70,6 +71,7 @@
     .bio p { margin: 0; }
     .bio p + p { margin-top: 1.5rem; }
 
+    /* NEW SINGLE SECTION */
     .single {
       width: min(100%, 850px);
       margin: clamp(2.75rem, 7vw, 4.75rem) auto 0;
@@ -79,20 +81,76 @@
     }
 
     .single-kicker {
-      margin: 0 0 0.45rem;
+      margin: 0 0 1.25rem;
       color: var(--faint);
       font-size: 0.78rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
     }
 
+    .single-cover {
+      display: block;
+      width: min(100%, 420px);
+      height: auto;
+      margin: 0 auto 1.35rem;
+      border: 1px solid rgba(241, 239, 233, 0.24);
+    }
+
     .single-title {
       margin: 0;
       color: var(--white);
-      font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.045em;
+      line-height: 1.35;
       text-transform: uppercase;
+    }
+
+    .single-subtitle {
+      margin: 0.65rem 0 0;
+      color: var(--soft-white);
+      font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+      line-height: 1.5;
+    }
+
+    .single-status {
+      display: inline-block;
+      margin-top: 1.15rem;
+      padding: 0.72rem 1.3rem;
+      border: 1px solid rgba(241, 239, 233, 0.72);
+      color: var(--white);
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    /* MERCH */
+    .merch {
+      width: min(100%, 850px);
+      margin: 2rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(241, 239, 233, 0.18);
+      text-align: center;
+    }
+
+    .merch-link {
+      display: inline-block;
+      padding: 0.72rem 1.25rem;
+      border: 1px solid rgba(241, 239, 233, 0.72);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      transition: background 120ms ease, color 120ms ease;
+    }
+
+    .merch-link:hover,
+    .merch-link:focus-visible {
+      background: var(--white);
+      color: var(--black);
     }
 
     .closing-stamp {
@@ -106,7 +164,6 @@
       max-width: 70vw;
       height: auto;
       margin: 0 auto;
-      filter: none;
       opacity: 0.93;
     }
 
@@ -124,7 +181,14 @@
       }
 
       .single { margin-top: 2.7rem; }
-      .closing-stamp img { width: 200px; }
+
+      .single-cover {
+        width: min(100%, 340px);
+      }
+
+      .closing-stamp img {
+        width: 200px;
+      }
     }
   </style>
 </head>
@@ -156,18 +220,30 @@
       </div>
 
       <div class="single" aria-label="Upcoming release">
-        <p class="single-kicker">New Single</p>
-        <p class="single-title">“Come On Baby” — Coming Soon</p>
+        <p class="single-kicker">New Single Coming Soon</p>
+
+        <img class="single-cover"
+             src="half-the-time-cover.png"
+             alt="Half the Time (I Wanna Forget You) single artwork by The Whiskey Dents">
+
+        <p class="single-title">Half the Time (I Wanna Forget You)</p>
+        <p class="single-subtitle">
+          Debut single from The Whiskey Dents<br>
+          Streaming soon
+        </p>
+
+        <!-- Non-clickable for now. On release day we can turn this into LISTEN NOW. -->
+        <span class="single-status">Coming Soon</span>
+      </div>
+
+      <div class="merch" aria-label="Whiskey Dents merchandise">
+        <a class="merch-link"
+           href="https://shop.thewhiskeydents.com"
+           target="_blank"
+           rel="noopener noreferrer">Merch</a>
       </div>
     </section>
-    <div style="text-align: center; margin: 1.25rem 0 0;">
-      <a href="https://shop.thewhiskeydents.com"
-         target="_blank"
-         rel="noopener"
-         style="display: inline-block; padding: 12px 22px; border: 1px solid #f1efe9; color: #f1efe9; text-decoration: none; font-weight: bold; letter-spacing: 2px;">
-        MERCH
-      </a>
-    </div>
+
     <div class="closing-stamp" aria-label="The Whiskey Dents logo">
       <img src="whiskey-dents-logo.jpg"
            alt="The Whiskey Dents truck logo">
