@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Listen to Half the Time (I Wanna Forget You), the debut single from The Whiskey Dents.">
+  <meta name="theme-color" content="#090909">
+  <title>Listen — Half the Time | The Whiskey Dents</title>
+
+  <style>
+    :root {
+      --black: #090909;
+      --white: #f1efe9;
+      --soft-white: #cbc8c1;
+      --faint: #8f8b84;
+      --line: rgba(241, 239, 233, 0.22);
+      --page-width: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--black);
+      color: var(--white);
+    }
+
+    body {
+      font-family: "Courier New", Courier, monospace;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    main {
+      width: min(100%, var(--page-width));
+      margin: 0 auto;
+      padding: clamp(2rem, 7vw, 4.5rem) clamp(1.2rem, 5vw, 2.5rem) 3.5rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.8rem;
+      color: var(--faint);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "American Typewriter", "Courier New", Courier, monospace;
+      font-size: clamp(2rem, 8vw, 4.6rem);
+      line-height: 0.98;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+    }
+
+    .song-title {
+      margin: 1rem auto 0;
+      color: var(--soft-white);
+      font-size: clamp(1rem, 2.8vw, 1.3rem);
+      line-height: 1.45;
+    }
+
+    .cover {
+      display: block;
+      width: min(100%, 470px);
+      height: auto;
+      margin: clamp(2rem, 6vw, 3rem) auto 0;
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 55px rgba(0, 0, 0, 0.42);
+    }
+
+    .choose {
+      margin: 2.15rem 0 1rem;
+      color: var(--faint);
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .platforms {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.8rem;
+      margin: 0 auto;
+    }
+
+    .platform {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0.7rem;
+      border: 1px solid rgba(241, 239, 233, 0.58);
+      color: var(--white);
+      text-decoration: none;
+      font-size: clamp(0.78rem, 2vw, 0.95rem);
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      line-height: 1.25;
+      text-transform: uppercase;
+      transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+    }
+
+    .platform:hover,
+    .platform:focus-visible {
+      background: var(--white);
+      color: var(--black);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .note {
+      margin: 1.3rem auto 0;
+      color: var(--faint);
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+
+    .home-link {
+      display: inline-block;
+      margin-top: 2.8rem;
+      color: var(--soft-white);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(203, 200, 193, 0.45);
+      padding-bottom: 0.2rem;
+    }
+
+    .home-link:hover,
+    .home-link:focus-visible {
+      color: var(--white);
+      border-color: var(--white);
+    }
+
+    .logo {
+      display: block;
+      width: clamp(150px, 28vw, 210px);
+      max-width: 62vw;
+      height: auto;
+      margin: 3rem auto 0;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 620px) {
+      .platforms {
+        grid-template-columns: 1fr;
+      }
+
+      .platform {
+        min-height: 62px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Out Now</p>
+    <h1>The Whiskey Dents</h1>
+    <p class="song-title">Half the Time (I Wanna Forget You)</p>
+
+    <img class="cover"
+         src="../half-the-time-cover.png"
+         alt="Half the Time (I Wanna Forget You) single artwork by The Whiskey Dents">
+
+    <p class="choose">Listen on your platform</p>
+
+    <div class="platforms" aria-label="Listen to Half the Time">
+      <a class="platform"
+         href="https://open.spotify.com/track/6pxQW9FPiHgHbaHHu4vO5Q"
+         target="_blank"
+         rel="noopener noreferrer">Spotify</a>
+
+      <a class="platform"
+         href="https://music.youtube.com/watch?v=nBKtjPNiF7A"
+         target="_blank"
+         rel="noopener noreferrer">YouTube Music</a>
+
+      <a class="platform"
+         href="https://music.amazon.com/albums/B0HLTF77FX?trackAsin=B0HLTLPPT4"
+         target="_blank"
+         rel="noopener noreferrer">Amazon Music</a>
+    </div>
+
+    <p class="note">More platforms will be added as the release finishes rolling out.</p>
+
+    <a class="home-link" href="../">&larr; Back to The Whiskey Dents</a>
+
+    <img class="logo"
+         src="../whiskey-dents-logo.jpg"
+         alt="The Whiskey Dents truck logo">
+  </main>
+</body>
+</html>
