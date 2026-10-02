@@ -122,7 +122,15 @@
       font-size: 0.86rem;
       font-weight: 700;
       letter-spacing: 0.09em;
+      text-decoration: none;
       text-transform: uppercase;
+      transition: background 120ms ease, color 120ms ease;
+    }
+
+    .single-status:hover,
+    .single-status:focus-visible {
+      background: var(--white);
+      color: var(--black);
     }
 
     /* MERCH */
@@ -219,8 +227,8 @@
         </p>
       </div>
 
-      <div class="single" aria-label="Upcoming release">
-        <p class="single-kicker">New Single Coming Soon</p>
+      <div class="single" aria-label="Latest release">
+        <p class="single-kicker">New Single — Out Now</p>
 
         <img class="single-cover"
              src="half-the-time-cover.png"
@@ -229,11 +237,10 @@
         <p class="single-title">Half the Time (I Wanna Forget You)</p>
         <p class="single-subtitle">
           Debut single from The Whiskey Dents<br>
-          Streaming soon
+          Streaming now
         </p>
 
-        <!-- Non-clickable for now. On release day we can turn this into LISTEN NOW. -->
-        <span class="single-status">Coming Soon</span>
+        <a class="single-status" href="listen/">Listen Now</a>
       </div>
 
       <div class="merch" aria-label="Whiskey Dents merchandise">
